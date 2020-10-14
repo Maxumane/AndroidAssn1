@@ -9,4 +9,27 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="ItmTimeExample">Tue 15 Sep 2015 17:18:08 GMT</string>
+    <string name="ItemTxtExample">Traditional methods of building will never catch up to the problem,
+        so we create new solutions to help nonprofits and governments everywhere build better, cheaper,
+        and faster.
+        When we build, we work solely with local partners and local labor to build holistic
+        communities around the world. Learn more about our process
+    Traditional methods of building will never catch up to the problem,
+        so we create new solutions to help nonprofits and governments everywhere build better, cheaper,
+        and faster.
+        When we build, we work solely with local partners and local labor to build holistic
+        communities around the world. Learn more about our process
+    Traditional methods of building will never catch up to the problem,
+        so we create new solutions to help nonprofits and governments everywhere build better, cheaper,
+        and faster.
+        When we build, we work solely with local partners and local labor to build holistic
+        communities around the world. Learn more about our process
+    Traditional methods of building will never catch up to the problem,
+        so we create new solutions to help nonprofits and governments everywhere build better, cheaper,
+        and faster.
+        When we build, we work solely with local partners and local labor to build holistic
+        communities around the world. Learn more about our process </string>
+    <string name="Item_BtnText">Item Activity Layout</string>
+    <string name="Item_titleText">Example title of news</string>
 </resources>

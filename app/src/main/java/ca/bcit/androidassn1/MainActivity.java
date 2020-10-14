@@ -1,5 +1,6 @@
 package ca.bcit.androidassn1;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -53,4 +54,10 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void onItemViewTestClick(View v) {
+        Intent i = new Intent(this, ItemActivity.class);
+        startActivity(i);
+    }
+
 }
