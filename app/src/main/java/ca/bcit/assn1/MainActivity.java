@@ -1,5 +1,6 @@
 package ca.bcit.assn1;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -12,24 +13,20 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    EditText searchBox;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+         searchBox = findViewById(R.id.searchBox);
     }
 
     @Override
@@ -38,6 +35,22 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+
+    public void onSearchEntry(View v) {
+        Intent i = new Intent(this, FirstFragment.class);
+        Date timeSearched = new Date();
+        if (!(searchBox.getText().toString().trim().length() == 0)) {
+            i.putExtra("searchQuery", searchBox.getText().toString());
+            i.putExtra("date", timeSearched.toString());
+            startActivity(i);
+        } else {
+            String errEmptyText = "You must enter a value into the search box before searching.";
+            Toast errEmptyTextToast = Toast.makeText(this, errEmptyText, Toast.LENGTH_SHORT);
+            errEmptyTextToast.show();
+        }
+
+    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -53,4 +66,5 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }

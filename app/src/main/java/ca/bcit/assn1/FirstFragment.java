@@ -33,7 +33,7 @@ public class FirstFragment extends AppCompatActivity {
         setContentView(R.layout.fragment_first);
         Intent intent = getIntent();
         final ListView list = findViewById(R.id.list);
-        search = intent.getStringExtra("user_text");
+        search = intent.getStringExtra("searchQuery");
         date = intent.getStringExtra("date");
         Result(list);
         final Intent intentSecond = new Intent(this, SecondFragment.class);

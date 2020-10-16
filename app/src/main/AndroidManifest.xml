@@ -11,8 +11,8 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SecondFragment"></activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".FirstFragment">
+        <activity android:name=".FirstFragment"></activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
