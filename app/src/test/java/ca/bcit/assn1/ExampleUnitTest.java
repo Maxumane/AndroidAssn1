@@ -1,4 +1,4 @@
-package ca.bcit.androidassn1;
+package ca.bcit.assn1;
 
 import org.junit.Test;
 
